@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Pinchzoom = () => {
   const [scale, setScale] = useState(1); // 기본 배율 (100%)
-  const scaleSteps = [1, 1.5, 3]; // 확대 단계 (100%, 150%, 300%)
+  const scaleSteps = [1, 2.5, 4]; // 확대 단계 (100%, 250%, 400%)
   const threshold = 80; // 손가락 거리 변화 최소 값 (80px 이상일 때만 확대)
   let accumulatedDistance = 0; // 누적 거리 차이를 저장
 
@@ -60,8 +60,8 @@ const Pinchzoom = () => {
         width: "100vw",
         height: "100vh",
         display: "flex",
-        justifyContent: "center", // 중앙 정렬
-        alignItems: "center", // 중앙 정렬
+        justifyContent: "center",
+        alignItems: "center",
         overflow: "hidden", // 스크롤 방지
         backgroundColor: "#f5f5f5",
       }}
