@@ -27,16 +27,13 @@ const Pinchzoom = () => {
         textAlign: "center",
         padding: "20px",
         boxSizing: "border-box",
-        backgroundColor: "#f5f5f5",
       }}
     >
       <h2
         style={{
           fontSize: `${fontSize}px`,
           transition: "font-size 0.2s ease",
-          maxWidth: "90%", // 화면 초과 방지
-          whiteSpace: "normal", // 줄바꿈 허용
-          wordBreak: "break-word",
+          maxWidth: "90%",
         }}
       >
         핀치 줌 테스트 페이지
@@ -45,9 +42,8 @@ const Pinchzoom = () => {
         style={{
           fontSize: `${fontSize}px`,
           transition: "font-size 0.2s ease",
-          maxWidth: "90%", // 화면 초과 방지
-          whiteSpace: "normal",
-          wordBreak: "break-word",
+          maxWidth: "90%",
+          wordWrap: "break-word",
         }}
       >
         이 텍스트는 핀치 줌을 하면 자동으로 확대됩니다.
@@ -57,8 +53,7 @@ const Pinchzoom = () => {
           fontSize: `${fontSize}px`,
           transition: "font-size 0.2s ease",
           maxWidth: "90%",
-          whiteSpace: "normal",
-          wordBreak: "break-word",
+          wordWrap: "break-word",
         }}
       >
         기본 크기는 16px이며, 최대 400%까지 확대 가능합니다.
