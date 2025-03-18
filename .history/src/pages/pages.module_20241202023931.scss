@@ -1,0 +1,27 @@
+.home {
+  position: relative;
+  span {
+    position: absolute;
+    &.landmark01 {
+      top: 250px;
+      left: 450px;
+    }
+    &.landmark02 {
+      top: 450px;
+      left: 630px;
+    }
+  }
+}
+
+.three_img {
+  .render {
+    width: 100vw;
+    height: 70vh;
+  }
+}
+
+.changeImage {
+  img {
+    height: 70vh;
+  }
+}

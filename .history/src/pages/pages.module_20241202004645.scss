@@ -1,0 +1,14 @@
+.home {
+  position: relative;
+  span {
+    position: absolute;
+    &.landmark01 {
+      top: 250px;
+      left: 450px;
+    }
+    &.landmark02 {
+      top: 450px;
+      left: 600px;
+    }
+  }
+}
